@@ -1,30 +1,25 @@
-# Full Stack Professional
+Image Upload Service
 
-Enrol [here](https://amigoscode.com/courses/full-stack-professional) with over *50 Hours* of Content with Plenty of Exercises
+Overview
+This project is designed to upload images to an Amazon S3 bucket through a RESTful API built with Java Spring Boot and hosted on an EC2 instance. The image data, specifically the Image ID, is stored in an Amazon RDS database and associated with customer records. The entire service is containerized using Docker, ensuring easy deployment and scalability.
 
-![Curriculum](https://user-images.githubusercontent.com/40702606/228275106-73076517-ff4f-40e0-a993-4d05d5a2ea77.png)
+Features
+S3 Image Upload: Images are uploaded to an Amazon S3 bucket using an S3 client connected to the S3 SDK.
+Local Fake Folder: The S3 client interacts with a local directory containing images labeled with unique Image IDs.
+RDS Integration: Image IDs are stored in an Amazon RDS database, associated with customer records.
+REST API with Spring Boot: The service provides a RESTful API for image upload, developed with Java Spring Boot and deployed on an EC2 instance.
+Docker Containerization: The entire application is containerized using Docker for ease of deployment and scalability.
+Technologies Used
+Java Spring Boot: Framework for building the REST API.
+Amazon S3: For storing images.
+Amazon RDS: For storing Image IDs associated with customers.
+EC2: Hosting the API.
+Docker: Containerizing the application.
+AWS SDK for Java: To interact with AWS services (S3, RDS).
+Postman: For testing the API endpoints.
+Prerequisites
+Before you begin, ensure you have met the following requirements:
 
-Are you ready to level up your coding skills and become a full stack professional? Our new 50+ hours course is designed to equip you with the latest tools and techniques to build impressive, full stack applications that will impress the users and your team.
-
-Over the next three months you will learn how to craft stunning, responsive front-end interfaces that flawlessly communicate with robust, scalable back-end servers, all with the use of industry-standard technologies such as:
-
-- ✅ Spring Boot 3
-- ✅ HTTP & API development
-- ✅ Developer tools for maximum productivity
-- ✅ Robust error handling techniques
-- ✅ Databases & PostgreSQL
-- ✅ Spring Data JPA
-- ✅ Flyway for seamless database migrations
-- ✅ JDBC for efficient database communication
-- ✅ Testing strategies for robust, reliable code
-- ✅ Docker for containerization and deployment
-- ✅ AWS for cloud-based hosting and scaling
-- ✅ DevOps best practices for agile, collaborative development
-- ✅ JavaScript and React for front-end development
-- ✅ Spring Security 6 for secure, authenticated applications
-- ✅ Login/Registration systems for user management
-- ✅ TypeScript for type-safe, scalable code
-- ✅ Angular for powerful, responsive front-end interfaces
-
-🎁 Bonus 6-Month IntelliJ IDEA Ultimate license worth 117.83$
-
+Docker installed on your local machine.
+AWS account with access to S3, RDS, and EC2.
+Java 11 or later installed.
